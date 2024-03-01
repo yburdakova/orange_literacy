@@ -24,7 +24,9 @@ This repository contains the source code for the Orange Literacy organization's 
 
 ## Getting Started
 Clone the repository:
- ```bash  git clone https://github.com/yburdakova/Purchaser ```
+ ```bash  
+  git clone https://github.com/yburdakova/Purchaser 
+```
 Install dependencies for the frontend and backend
 Set up your environment variables
 Initialize the database
