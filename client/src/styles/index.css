@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap');
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  color: #4B4A4A;
+  --dark-background-color: #4D4C72;
+  font-size: 16px;
+}
+body, html {
+  height: 100%;
+  font-weight: 500;
+}
+
+body{
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.menu a {
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden; 
+  color: #747574;
+  transition: all 0.3s ease 0s;
+}
+
+.menu a::after {
+  content: '';
+  display: block;
+  margin-top: 3px;
+  width: 0;
+  height: 2px;
+  background: #CF8146;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after,
+.menu a.active::after { 
+  width: 100%;
+}
+
+.menu a.active {
+  color: #CF8146;
+}
