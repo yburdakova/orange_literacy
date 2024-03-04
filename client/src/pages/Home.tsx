@@ -1,5 +1,6 @@
 import { Footer, Header } from '../components'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
+import logo from '../assets/logo-full-darkorange.svg'
 
 const Home = () => {
   return (
@@ -11,6 +12,11 @@ const Home = () => {
         </div>
       </main>
       <Footer/>
+      <div className="bottom_logo">
+        <Link to="/">
+          <img src={logo} alt="Logo" width={100} />
+        </Link>
+      </div>
     </>
   )
 }

@@ -1,0 +1,72 @@
+section {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger {
+  cursor: pointer;
+  padding: 1.3em 0.4em;
+
+}
+
+.burger > div {
+  width: 2.2em;
+  height: 0.3em;
+  border-radius: 4px;;
+  background: #747574;
+  position: relative; 
+}
+
+.burger > div::before,
+.burger > div::after {
+  transition: font-size 0s;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2.2em;
+  height: 0.3em;
+  background: #747574;
+  border-radius: 4px;;
+}
+
+.burger > div::before {
+  margin-top: -0.8em;
+}
+
+.burger > div::after {
+  margin-top: 0.8em;
+}
+
+.burger1 {
+  transition: all 0.7s, font-size 0s;
+  transition-timing-function: cubic-bezier(0.68, -0.35, 0.265, 1.35);
+}
+
+.burger1 > div {
+  transition: all 0.1s 0.3s, font-size 0s;
+}
+
+.burger1 > div::before,
+.burger1 > div::after {
+  transition: all 0.3s 0.2s, font-size 0s;
+}
+
+.burger1.toggled {
+  transform: rotate(180deg);
+}
+
+.burger1.toggled > div::before {
+  transform: rotate(45deg) translate(0.4em, 0.5em);
+}
+
+.burger1.toggled > div {
+  background: transparent;
+}
+
+.burger1.toggled > div::after {
+  transform: rotate(-45deg) translate(0.6em, -0.75em);
+}

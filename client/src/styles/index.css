@@ -4,7 +4,6 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  line-height: 1.5;
   color: #4B4A4A;
   --dark-background-color: #4D4C72;
   font-size: 16px;
@@ -12,12 +11,13 @@
 body, html {
   height: 100%;
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 
 body{
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  
   margin: 0;
 }
 

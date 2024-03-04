@@ -10,6 +10,7 @@
   max-width: 1080px;
   width: 100%;
   margin: 0 20px;
+  display: flex;
 }
 
 main{
@@ -33,14 +34,12 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
-footer {
-  background: var(--dark-background-color);
-  height: max-content;
-  width: 100%; 
-  display: flex;
-  justify-content: center;
-}
 
+
+.bottom_logo{
+  background: #fff;
+  height: 40px;
+}
 .top{
   display: flex;
 }
@@ -62,4 +61,7 @@ footer {
 .menuBox{
   display: flex;
   gap: 20px;
+}
+.bottom_logo{
+  padding: 10px;
 }
