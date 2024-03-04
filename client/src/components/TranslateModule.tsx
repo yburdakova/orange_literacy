@@ -59,7 +59,7 @@ const TranslateModule = () => {
       <div className='siteTranslate'>
         <label className="translation-label">Language:</label>
         <select onChange={(event)=>handlechangeSelect(event.target.value)} className="custom-select">
-          {languages.map(language => <option key={language.title} value={language.value}>{language.title}</option>)}
+          {languages.map(language => <option key={language.title} value={language.value} className='language-item'>{language.title}</option>)}
         </select>
         <div id="google_translate_element2"></div>
       </div>

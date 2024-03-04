@@ -1,7 +1,7 @@
 import About from "./About";
 import Career from "./Career";
 import Home from "./Home";
-import MainPageComponent from "./MainPageComponent";
+import MainPage from "./MainPage";
 import News from "./News";
 import Programs from "./Programs";
 import Volunteer from "./Volunteer";
@@ -14,5 +14,5 @@ export {
   News,
   Volunteer,
   Career,
-  MainPageComponent
+  MainPage
 }

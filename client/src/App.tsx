@@ -1,6 +1,6 @@
 
 import './styles/App.css'
-import { About, Career, Home, MainPageComponent, News, Programs, Volunteer } from './pages'
+import { About, Career, Home, MainPage, News, Programs, Volunteer } from './pages'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} >
-            <Route index element={<MainPageComponent/>} />
+            <Route index element={<MainPage/>} />
             <Route path="/news" element={<News/>} />
             <Route path="/about" element={<About/>} />
             <Route path="/programs" element={<Programs/>} />

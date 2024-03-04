@@ -1,8 +1,50 @@
-section {
+header {
+  position: fixed;
+  top: 0;
+  left: 0; 
+  right: 0;
+  height: 100px;
+  z-index: 10;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.top{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 8px;
+  z-index: 10;
+}
+.headerTools{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.menuBox{
+  display: flex;
+  gap: 20px;
+}
+.bottom_logo{
+  padding: 10px;
+}
+
+.burger_container {
   width: 3rem;
   height: 3rem;
-  margin: 0.5rem;
-  display: flex;
+  margin: 0.1rem;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -14,8 +56,8 @@ section {
 }
 
 .burger > div {
-  width: 2.2em;
-  height: 0.3em;
+  width: 2em;
+  height: 0.25em;
   border-radius: 4px;;
   background: #747574;
   position: relative; 
@@ -27,8 +69,8 @@ section {
   content: "";
   display: block;
   position: absolute;
-  width: 2.2em;
-  height: 0.3em;
+  width: 2em;
+  height: 0.25em;
   background: #747574;
   border-radius: 4px;;
 }
@@ -60,7 +102,7 @@ section {
 }
 
 .burger1.toggled > div::before {
-  transform: rotate(45deg) translate(0.4em, 0.5em);
+  transform: rotate(45deg) translate(0.6em, 0.55em);
 }
 
 .burger1.toggled > div {
@@ -68,5 +110,46 @@ section {
 }
 
 .burger1.toggled > div::after {
-  transform: rotate(-45deg) translate(0.6em, -0.75em);
+  transform: rotate(-45deg) translate(0.6em, -0.55em);
+}
+.mobile_menu{
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  top: 120px;
+  right: -100vw;
+  display: flex;
+  transition: all 0.3s ease 0s;
+  justify-content:end;
+  text-align: right;
+  padding-right: 20px;
+}
+.mobile_menu li{
+  color: #4D4C72;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.mobile_menu a{
+  text-decoration: none;
+}
+.mobile_menu.active {
+  right: 0; 
+  transition: all 0.3s ease 0s;
+}
+
+
+@media screen and (max-width: 1023px){
+  header{
+    height: 110px;
+  }
+.menu{
+  display: none;
+}
+.burger_container {
+  display: flex;
+}
+.logo img{
+  width: 160px;
+}
 }

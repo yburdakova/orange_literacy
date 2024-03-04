@@ -20,48 +20,7 @@ main{
   justify-content: center;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0; 
-  right: 0;
-  height: 100px;
-  z-index: 10;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-}
-
-
-
 .bottom_logo{
   background: #fff;
   height: 40px;
-}
-.top{
-  display: flex;
-}
-.headerTools{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.menu{
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 10px;
-
-}
-
-.menuBox{
-  display: flex;
-  gap: 20px;
-}
-.bottom_logo{
-  padding: 10px;
 }

@@ -4,6 +4,7 @@ import { menuLinks } from '../constants/navigation'
 import MenuLink from './MenuLink'
 import { Link } from 'react-router-dom'
 import { Burger } from '.'
+import '../styles/Header.css'
 
 const Header = () => {
   return (
@@ -17,13 +18,13 @@ const Header = () => {
             </div>
             <div className="headerTools">
               <TranslateModule />
-              {/* <nav className='menu'>
+              <nav className='menu'>
                 <ul className='menuBox'>
                   {menuLinks.map((link) => 
                     <MenuLink title={link.title} key={link.title} path={link.path}/>
                   )}
                 </ul>
-              </nav> */}
+              </nav>
               <Burger/>
             </div>
           </div>

@@ -7,9 +7,7 @@ const Home = () => {
     <>
       <Header/>
       <main>
-        <div className="container">
         <Outlet/> 
-        </div>
       </main>
       <Footer/>
       <div className="bottom_logo">
