@@ -1,0 +1,31 @@
+.transator{
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  justify-content: flex-end;
+}
+
+.siteTranslate {
+  padding: .4rem 1.5rem;
+  background: #f1f0f0;
+  border-radius: 10px;
+}
+
+.siteTranslate label {
+  display: inline-block;
+  color: var(--almost-black);
+  margin-right: 10px;
+}
+
+.siteTranslate select {
+  width: auto;
+  font-size: 15px;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+
+
+#google_translate_element2{
+  display: none!important;
+}

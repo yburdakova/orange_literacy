@@ -1,0 +1,141 @@
+footer {
+  background: var(--dark-background-color);
+  height: max-content;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.footer-section {
+  flex: 1; 
+  padding: 0 40px 0 20px; 
+}
+.footer-divider {
+  width: 1px;
+  background-color: #3B3A65; 
+  margin: 0 20px; 
+  align-self: stretch;
+}
+.footer-contact {
+  max-width: 300px;
+}
+.socials{
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+.ss_container{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: #fff;
+  background: #717097;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  line-height: 1.5;
+  transition: all 0.3s ease 0s;
+}
+.ss_container:hover{
+  scale: 1.3;
+}
+.contactItem > a{
+  display: flex;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.contactItem_icon{
+  margin-right: 10px;
+  transition: all 0.3s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.contactItem > a:hover .contactItem_icon{
+  scale: 1.5;
+  color: #b8b7cf;
+}
+.contactItem_text{
+  transition: all 0.3s ease 0s;
+}
+.contactItem > a:hover .contactItem_text{
+  color: #b8b7cf;
+}
+
+.contactItem_hours{
+  line-height: 1.5;
+  font-weight: 300;
+}
+.footerColumn{
+  display: flex;
+}
+.footerRow:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.linehight {
+  line-height: 1.2;
+}
+
+.subscribe-form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 260px;
+}
+.subscribe-form label{
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.subscribe-form input {
+  border-radius: 10px;
+  height: 28px;
+  padding: 0 10px;
+}
+.subscribe-form > button {
+  background: #7AF051;
+  border-radius: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #737473;
+  font-weight: 800;
+  width: 50%;
+  margin-top: 10px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.subscribe-form > button:hover{
+  color:#CF8146
+}
+
+@media screen and (max-width: 1023px){
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-section{
+    margin-top: 20px;
+  }
+  .footer-divider {
+    height: 1px;
+    width: 100%;
+    background-color: #3B3A65; 
+    margin: 20px 0; 
+    justify-self: stretch;
+  }
+}
