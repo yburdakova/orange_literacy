@@ -112,12 +112,13 @@ header {
 .burger1.toggled > div::after {
   transform: rotate(-45deg) translate(0.6em, -0.55em);
 }
+
 .mobile_menu{
   width: 100vw;
   height: 100vh;
   background: #fff;
   position: fixed;
-  top: 120px;
+  top: 110px;
   right: -100vw;
   display: flex;
   transition: all 0.3s ease 0s;
@@ -125,14 +126,17 @@ header {
   text-align: right;
   padding-right: 20px;
 }
+
 .mobile_menu li{
   color: #4D4C72;
   text-transform: uppercase;
   padding: 20px;
 }
+
 .mobile_menu a{
   text-decoration: none;
 }
+
 .mobile_menu.active {
   right: 0; 
   transition: all 0.3s ease 0s;
@@ -143,13 +147,13 @@ header {
   header{
     height: 110px;
   }
-.menu{
-  display: none;
-}
-.burger_container {
-  display: flex;
-}
-.logo img{
-  width: 160px;
-}
+  .menu{
+    display: none;
+  }
+  .burger_container {
+    display: flex;
+  }
+  .logo img{
+    width: 160px;
+  }
 }

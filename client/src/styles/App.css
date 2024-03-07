@@ -25,6 +25,23 @@ main{
   height: 40px;
 }
 
+button {
+  background: #7AF051;
+  border-radius: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #737473;
+  font-weight: 800;
+  width: 50%;
+  margin-top: 10px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border: none;
+}
+button:hover{
+  color:#CF8146
+}
+
 @media screen and (max-width: 1023px){
   main{
     margin-top: 110px;
