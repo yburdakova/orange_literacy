@@ -1,0 +1,35 @@
+.attention {
+  background: linear-gradient(to right, #D36311, #BA101F);
+  display: flex;
+  justify-content: center;
+}
+
+.announcement{
+  color: #fff;
+  width: 100%;
+  height: fit-content;
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: center;
+}
+.announcement-icon{
+  margin-left: 5px;  
+}
+.announcement-icon svg {
+  vertical-align:sub;
+}
+
+.announcement:hover .announcement-icon svg {
+  animation: arrowmove 0.6s linear infinite;
+}
+
+@keyframes arrowmove {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}

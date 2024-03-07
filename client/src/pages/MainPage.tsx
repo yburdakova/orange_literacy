@@ -1,3 +1,4 @@
+import { MdDoubleArrow } from 'react-icons/md'
 import '../styles/MainPage.css'
 
 const MainPage = () => {
@@ -6,7 +7,9 @@ const MainPage = () => {
       <section className="hero">
         <div className="attention">
           <div className="container">
-            kjhbfkj
+            <div className="announcement">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam impedit libero natus in velit. Cor <span className='announcement-icon'><MdDoubleArrow size={18}/></span>
+            </div>
           </div>
         </div>
       </section>
