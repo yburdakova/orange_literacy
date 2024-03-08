@@ -2,6 +2,7 @@ import Burger from "./Burger";
 import Footer from "./Footer";
 import Header from "./Header";
 import MenuLink from "./MenuLink";
+import NewsItem from "./NewsItem";
 import SocialIcon from "./SocialIcon";
 import TranslateModule from "./TranslateModule";
 
@@ -12,5 +13,6 @@ export {
   Header,
   Footer,
   SocialIcon,
-  Burger
+  Burger,
+  NewsItem
 }

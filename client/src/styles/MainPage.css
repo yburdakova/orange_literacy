@@ -1,3 +1,8 @@
+.main-container{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
 .attention {
   background: linear-gradient(to right, #D36311, #BA101F);
   display: flex;
@@ -12,24 +17,36 @@
   padding: 10px 0;
   text-align: center;
 }
-.announcement-icon{
-  margin-left: 5px;  
-}
-.announcement-icon svg {
+
+.arrow-icon svg {
   vertical-align:sub;
 }
 
-.announcement:hover .announcement-icon svg {
+.announcement:hover .arrow-icon svg {
+
   animation: arrowmove 0.6s linear infinite;
+}
+
+
+@keyframes arrowmove {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
 }
 
 section.cover{
   position: relative;
+  
 }
 
 .imgBox{
   display: flex;
-  height: 680px;
+  height: 700px;
 }
 
 .imgBox img {
@@ -51,28 +68,96 @@ section.cover{
   flex-direction: column;
   gap: 20px;
 }
+
 .textBox button {
   width:fit-content;
   padding: 10px 20px;
+  
 }
+
+.textBox button:hover .arrow-icon svg {
+  animation: arrowmove 0.6s linear infinite;
+}
+
 
 .textBox p{
   font-weight: 400;
 }
-@keyframes arrowmove {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(10px);
-    opacity: 0;
-  }
+
+section .container {
+  margin: 0 auto;
+}
+
+.buttonBox{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.buttonBox > .mainButton{
+  background: #fff;
+  margin-top: -20px;
+  padding: 10px 30px;
+  border: 2px solid #E07D45;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+
+.mainButton:hover{
+  background: #DB7F35;
+  color:#fff;
+  cursor:pointer;
+}
+
+.section-title{
+  color: #4D4C72;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.more-link{
+  cursor: pointer;
+  color: #747574;
+}
+.more-link:hover .arrow-icon svg {
+  animation: arrowmove 0.6s linear infinite;
+}
+.hotNews{
+  display: flex;
+  flex-direction: column;
+}
+.hotNews-top{
+  display: flex;
+  margin-bottom: 20px;
+}
+.hotNewsBox{
+  display: flex;
+  gap: 20px;
 }
 
 @media screen and (max-width: 1023px){
   .textBox{
     top: 20%;
     left: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .textBox{
+    top: 5%;
+    width: 300px;
+  }
+  .buttonBox{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .buttonBox > .mainButton:not(:first-child){
+    margin-top: 0px;
+    
+  }
+  .mainButton{
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

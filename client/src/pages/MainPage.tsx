@@ -1,15 +1,27 @@
 import { MdDoubleArrow } from 'react-icons/md'
 import '../styles/MainPage.css'
 import { heroImage } from '../assets'
+import { useEffect, useState } from 'react'
+import { news } from '../constants/dbdata'
+import { NewsProps } from '../constants/types'
+import { NewsItem } from '../components'
 
 const MainPage = () => {
+  const [hotNews, setHotNews] = useState<NewsProps[]>([])
+
+  useEffect(() => {
+    const lastNews = news.filter(news => news.category === "News").slice(-3)
+    setHotNews(lastNews)
+    
+  }, [])
+
   return (
-    <div>
+    <div className='main-container'>
       <section className="hero">
         <div className="attention">
           <div className="container">
             <div className="announcement">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam impedit libero natus in velit. Cor <span className='announcement-icon'><MdDoubleArrow size={18}/></span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam impedit libero natus in velit. Cor <span className='arrow-icon'><MdDoubleArrow size={18}/></span>
             </div>
           </div>
         </div>
@@ -21,9 +33,42 @@ const MainPage = () => {
         <div className="textBox">
           <h1>Welcome to Orange Literacy</h1>
           <p className="subtitle">Orange Literacy is an independent, community-based, volunteer-driven organization dedicated to making literacy available to all. We provide free, individualized literacy instruction to adults who would like to improve their reading, writing, basic math or English language skills.</p>
-          <button>LEARN MORE</button>
+          <button>LEARN MORE <span className='arrow-icon'><MdDoubleArrow size={18}/></span></button>
         </div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam impedit libero natus in velit. Corrupti totam natus expedita laborum rem consequatur exercitationem ut consectetur ipsum sequi deleniti sunt, excepturi et est eius tempora laudantium labore quod reprehenderit, dolorem assumenda non mollitia? Neque, officia molestiae? Vero ipsa eaque quos? Excepturi obcaecati ab odit cum ratione dicta eius necessitatibus eligendi corporis, quia at quasi cupiditate nesciunt ex modi repudiandae quisquam. Optio tempore nostrum nemo non. Fuga natus odio, voluptatem incidunt tempore iure porro, aspernatur in pariatur, sequi quas. Obcaecati iusto architecto impedit voluptate unde quibusdam quas, dolorum at? Temporibus ad reiciendis reprehenderit laudantium in animi voluptates itaque dolor harum quo! Laborum suscipit voluptate nostrum odio itaque blanditiis minima modi vitae culpa neque iure maiores, error, voluptatibus repellendus? Eius quos adipisci excepturi nulla, tempora natus aperiam quasi laborum a aut! Expedita deleniti, quaerat ex nihil similique illo qui dolores possimus
+        <div className="container">
+          <div className="buttonBox">
+            <div className="mainButton">
+              BECOME A STUDENT
+            </div>
+            <div className="mainButton">
+              VOLUNTEER WITH US
+            </div>
+            <div className="mainButton">
+              MAKE A DONATION
+            </div>
+            <div className="mainButton">
+              GIVE
+            </div>
+          </div>
+        </div>
+      </section>
+      <section >
+        <div className="container">
+          <div className='hotNews'>
+            <div className="hotNews-top">
+              <h2 className="section-title">Recent News</h2>
+              <div className="more-link">more news <span className='arrow-icon'><MdDoubleArrow size={16}/></span></div>
+            </div>
+          
+          <div className="hotNewsBox">
+            {
+              hotNews.map((news: NewsProps) => <NewsItem key={news.title} news={news}/>)
+            }
+          </div>
+          </div>
+          
+        </div>
+        
       </section>
     </div>
   )
