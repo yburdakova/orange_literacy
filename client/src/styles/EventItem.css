@@ -1,0 +1,74 @@
+.eventItemBox{
+  background: #F5F5F5;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  display: flex;
+  -webkit-box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+
+.eventItemBox > .imgBox{
+  object-fit: cover;
+  display: flex;
+  border-radius: 20px;
+  border: 2px solid #4D4C72;
+  overflow-y: hidden;
+}
+.eventData{
+  flex:1;
+  display: flex;
+}
+.eventInfo{
+  margin-left: 20px;
+  flex:1;
+}
+
+.eventTitle{
+  color: #4D4C72;
+  font-weight: 600;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.eventDate{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #DA7D36;
+  font-weight: 800;
+  margin: 10px;
+  text-align: center;
+  line-height: 0.9;
+}
+.eventDate .day{
+  font-size: 60px;
+  
+}
+
+.eventDate .month{
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.eventDate .time{
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.eventItemBox:hover{
+  background-color: #e2f8b5;
+}
+
+.eventItemBox:hover .imgBox img{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 767px) {
+  .eventItemBox{
+    flex-direction: column;
+  }
+}

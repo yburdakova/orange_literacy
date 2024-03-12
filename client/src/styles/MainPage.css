@@ -14,7 +14,7 @@
   width: 100%;
   height: fit-content;
   cursor: pointer;
-  padding: 10px 0;
+  padding: 10px 20px;
   text-align: center;
 }
 
@@ -44,12 +44,12 @@ section.cover{
   
 }
 
-.imgBox{
+section.cover .imgBox{
   display: flex;
   height: 700px;
 }
 
-.imgBox img {
+section.cover .imgBox img {
   width: 100%;
   object-fit: cover;
 }
@@ -124,22 +124,66 @@ section .container {
   animation: arrowmove 0.6s linear infinite;
 }
 .hotNews{
+  width: 100%;
   display: flex;
   flex-direction: column;
+  margin: 20px;
+
 }
 .hotNews-top{
   display: flex;
   margin-bottom: 20px;
 }
 .hotNewsBox{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
+section.video{
+  background-color:#4D4C72;
+}
+p.text{
+  display: flex;
+  color:#fff;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.videoBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.video-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin: 40px 20px;
+}
+iframe.videoItem{
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.eventsBox{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
 @media screen and (max-width: 1023px){
   .textBox{
     top: 20%;
     left: 5%;
+  }
+  .hotNewsBox{
+    flex-direction: column;
+  }
+  .video-container{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -159,5 +203,11 @@ section .container {
   .mainButton{
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .video-container{
+    grid-template-columns: 1fr ;
+  }
+  .hotNewsBox{
+    grid-template-columns: 1fr ;
   }
 }

@@ -1,4 +1,5 @@
 import Burger from "./Burger";
+import EventItem from "./EventItem";
 import Footer from "./Footer";
 import Header from "./Header";
 import MenuLink from "./MenuLink";
@@ -14,5 +15,6 @@ export {
   Footer,
   SocialIcon,
   Burger,
-  NewsItem
+  NewsItem,
+  EventItem
 }

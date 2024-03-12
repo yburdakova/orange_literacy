@@ -14,6 +14,7 @@ export interface SocialIconProps{
 export interface NewsProps {
   image: string;
   title: string;
+  description?: string;
   content: string;
   category: string;
   createdAt: string;
@@ -21,4 +22,12 @@ export interface NewsProps {
 }
 export interface NewsItemProps {
   news: NewsProps;
+}
+
+export interface DataProps {
+  year: string;
+  month: string;
+  day: string;
+  hours: string;
+  minutes: string;
 }

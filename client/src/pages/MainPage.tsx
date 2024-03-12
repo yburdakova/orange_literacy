@@ -4,15 +4,17 @@ import { heroImage } from '../assets'
 import { useEffect, useState } from 'react'
 import { news } from '../constants/dbdata'
 import { NewsProps } from '../constants/types'
-import { NewsItem } from '../components'
+import { EventItem, NewsItem } from '../components'
 
 const MainPage = () => {
   const [hotNews, setHotNews] = useState<NewsProps[]>([])
+  const [events, setEvents] = useState<NewsProps[]>([])
 
   useEffect(() => {
     const lastNews = news.filter(news => news.category === "News").slice(-3)
+    const upcomingEvents = news.filter(news => news.category === "Events").slice(-3)
     setHotNews(lastNews)
-    
+    setEvents(upcomingEvents)
   }, [])
 
   return (
@@ -63,6 +65,41 @@ const MainPage = () => {
           <div className="hotNewsBox">
             {
               hotNews.map((news: NewsProps) => <NewsItem key={news.title} news={news}/>)
+            }
+          </div>
+          </div>
+          
+        </div>
+        
+      </section>
+      <section className="video">
+        <div className="container">
+          <div className="videoBox">
+            <p className="text">
+              No one can answer the question “Why Literacy?” better than our students. <br></br>Listen as each student tells his/her story of struggles, turning points and bright futures.
+            </p>
+            <div className="video-container">
+                <iframe className='videoItem' src="https://www.youtube.com/embed/YZBAdoTQt0k" allowFullScreen></iframe>
+                <iframe className='videoItem' src="https://www.youtube.com/embed/JiMsib7Gv-o" allowFullScreen></iframe>
+                <iframe className='videoItem' src="https://www.youtube.com/embed/PRQ33jj2a24" allowFullScreen></iframe>
+                <iframe className='videoItem' src="https://www.youtube.com/embed/Gsh19yM_0UU" allowFullScreen></iframe>
+                <iframe className='videoItem' src="https://www.youtube.com/embed/PMYBla9PZn8" allowFullScreen></iframe>
+                <iframe className='videoItem' src="https://www.youtube.com/embed/venfkTRb1qY" allowFullScreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section >
+        <div className="container">
+          <div className='hotNews'>
+            <div className="hotNews-top">
+              <h2 className="section-title">Upcoming Events</h2>
+              <div className="more-link">more events <span className='arrow-icon'><MdDoubleArrow size={16}/></span></div>
+            </div>
+          
+          <div className="eventsBox">
+            {
+              events.map((news: NewsProps) => <EventItem key={news.title} news={news}/>)
             }
           </div>
           </div>
