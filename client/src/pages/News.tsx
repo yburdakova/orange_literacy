@@ -1,28 +1,51 @@
+import { useEffect, useState } from 'react'
 import { NewsItem } from '../components'
 import { news } from '../constants/dbdata'
 import { NewsProps } from '../constants/types'
 import '../styles/NewsPage.css'
 import '../styles/App.css'
+
+const cats = [
+  "All", "News", "Articles", "Events", "Press Realeses", "Student Spotlights", "Volunteer Spotlights", "Partner Spotlights"
+]
+
 const News = () => {
+  const [active, setActive] = useState('All');
+  const [shownNews, setShownNews] = useState(news)
+  const [empty, setEmpty] = useState(false)
+
+  const handleClickActiveCat = (category: string) => {
+    setActive(category)
+  }
+
+  useEffect(() => {
+    if (!(active === "All")) {
+      const filtredNews = news.filter(news => news.category === active)
+      setShownNews(filtredNews)
+      shownNews.length ? setEmpty(false) :  setEmpty(true)
+    } else (setShownNews(news))
+  },[active])
+
+  useEffect(() => {
+    setEmpty(shownNews.length === 0);
+  }, [shownNews]);
+  
   return (
     <div className="main-container">
       <section >
         <div className="container">
           <div className='categories'>
-            <div className="catItem">News</div>
-            <div className="catItem">Articles</div>
-            <div className="catItem">Events</div>
-            <div className="catItem">Press Realeses</div>
-            <div className="catItem">Student Spotlights</div>
-            <div className="catItem">Volunteer Spotlights</div>
-            <div className="catItem">Partner Spotlights</div>
+            {
+              cats.map(cat => <div className={`catItem ${active==cat ? "activeCat" : ""}`} onClick={()=>handleClickActiveCat(cat)} key={cat} >{cat}</div>)
+            }
           </div>
         </div>
       </section>
       <section className="newsBox">
         <div className="container">
           <div className="newsBox-container">
-            { news.map((news: NewsProps) => <NewsItem key={news.title} news={news}/>) }
+            { shownNews.map((news: NewsProps, item) => <NewsItem key={`${news.title}-${item}`} news={news}/>) }
+            { empty && <div>There is no imformation in this category</div> }
           </div>
         </div>
       </section>
