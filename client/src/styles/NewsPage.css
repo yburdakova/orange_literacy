@@ -1,0 +1,43 @@
+.categories{
+  display: flex;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.catItem{
+  font-size: 14px;
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden; 
+  color: #747574;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.catItem::after {
+  content: '';
+  display: block;
+  margin-top: 3px;
+  width: 0;
+  height: 2px;
+  background: #CF8146;
+  transition: width 0.3s ease;
+}
+
+.catItem:hover::after,
+.catItem .active::after { 
+  width: 100%;
+}
+
+.catItem .active {
+  color: #CF8146;
+  font-weight: 600;
+}
+
+.newsBox-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}

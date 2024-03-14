@@ -23,7 +23,7 @@ const MainPage = () => {
         <div className="attention">
           <div className="container">
             <div className="announcement">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam impedit libero natus in velit. Cor <span className='arrow-icon'><MdDoubleArrow size={18}/></span>
+              Enrollment for ESL 2025 courses is now open. Hurry up and apply. Limited number of registrations. <span className='arrow-icon'><MdDoubleArrow size={18}/></span>
             </div>
           </div>
         </div>
@@ -38,19 +38,16 @@ const MainPage = () => {
           <button>LEARN MORE <span className='arrow-icon'><MdDoubleArrow size={18}/></span></button>
         </div>
         <div className="container">
-          <div className="buttonBox">
-            <div className="mainButton">
+          <div className="buttonBox" >
+            <a className="mainButton" href='https://orangeliteracy.my.site.com/studentapp/s/' target='_blank'>
               BECOME A STUDENT
-            </div>
-            <div className="mainButton">
+            </a>
+            <a className="mainButton" href='https://docs.google.com/forms/d/e/1FAIpQLSceS9Z14h-RD2E9SY06mcrevCjmYZgEWRkxgEzICsNHkF_HdA/viewform' target='_blank'>
               VOLUNTEER WITH US
-            </div>
-            <div className="mainButton">
+            </a>
+            <a className="mainButton" href='https://secure.givelively.org/donate/orange-county-literacy-council-inc' target='_blank'>
               MAKE A DONATION
-            </div>
-            <div className="mainButton">
-              GIVE
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -70,13 +67,12 @@ const MainPage = () => {
           </div>
           
         </div>
-        
       </section>
       <section className="video">
         <div className="container">
           <div className="videoBox">
             <p className="text">
-              No one can answer the question “Why Literacy?” better than our students. <br></br>Listen as each student tells his/her story of struggles, turning points and bright futures.
+              No one can answer the question “Why Literacy?” better than our students. Listen as each student tells his/her story of struggles, turning points and bright futures.
             </p>
             <div className="video-container">
                 <iframe className='videoItem' src="https://www.youtube.com/embed/YZBAdoTQt0k" allowFullScreen></iframe>

@@ -13,6 +13,7 @@
 
 .eventItemBox > .imgBox{
   object-fit: cover;
+  width: 30%;
   display: flex;
   border-radius: 20px;
   border: 2px solid #4D4C72;
@@ -70,5 +71,8 @@
 @media screen and (max-width: 767px) {
   .eventItemBox{
     flex-direction: column;
+  }
+  .eventItemBox > .imgBox{
+    width: 100%;
   }
 }
