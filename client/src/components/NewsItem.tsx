@@ -1,7 +1,7 @@
 import '../styles/NewsItem.css'
 import { DataProps, NewsItemProps } from '../constants/types'
 import { useEffect, useState } from 'react'
-import { formatDate } from '../middleware/formatDate'
+import { formatDate } from '../middleware/formatDate/formatDate'
 
 const NewsItem = ({news}: NewsItemProps) => {
   const [newsDate, setNewsDate] = useState<DataProps | null>(null)

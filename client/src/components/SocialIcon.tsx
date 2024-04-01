@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { SocialIconProps } from '../constants/types'
 
 const SocialIcon = ({icon, url, title}: SocialIconProps) => {
