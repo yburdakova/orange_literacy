@@ -31,3 +31,9 @@ export interface DataProps {
   hours: string;
   minutes: string;
 }
+
+export interface ProgramCardProps {
+  title: string;
+  image: string;
+  path: string;
+}

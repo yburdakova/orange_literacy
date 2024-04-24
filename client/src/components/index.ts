@@ -1,9 +1,11 @@
+import Attention from "./Attention";
 import Burger from "./Burger";
 import EventItem from "./EventItem";
 import Footer from "./Footer";
 import Header from "./Header";
 import MenuLink from "./MenuLink";
 import NewsItem from "./NewsItem";
+import ProgramCard from "./ProgramCard";
 import SocialIcon from "./SocialIcon";
 import TranslateModule from "./TranslateModule";
 
@@ -16,5 +18,7 @@ export {
   SocialIcon,
   Burger,
   NewsItem,
-  EventItem
+  EventItem,
+  ProgramCard,
+  Attention
 }

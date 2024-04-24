@@ -4,7 +4,7 @@ import { heroImage } from '../assets'
 import { useEffect, useState } from 'react'
 import { news } from '../constants/dbdata'
 import { NewsProps } from '../constants/types'
-import { EventItem, NewsItem } from '../components'
+import { Attention, EventItem, NewsItem } from '../components'
 import { Link } from 'react-router-dom'
 
 const MainPage = () => {
@@ -20,15 +20,7 @@ const MainPage = () => {
 
   return (
     <div className='main-container'>
-      <section className="hero">
-        <div className="attention">
-          <div className="container">
-            <div className="announcement">
-              Enrollment for ESL 2025 courses is now open. Hurry up and apply. Limited number of registrations. <span className='arrow-icon'><MdDoubleArrow size={18}/></span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Attention/>
       <section className="cover">
         <div className="imgBox">
           <img src={heroImage} alt="Orange Literacy Image"/>

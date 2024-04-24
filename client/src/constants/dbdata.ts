@@ -1,4 +1,4 @@
-import { event01, event02, event03, new01, new02, new03 } from "../assets"
+import { event01, event02, event03, new01, new02, new03, prog01, prog02, prog03, prog04 } from "../assets"
 import { auroraBoyer, casonLynley, deanSmith, johnSherer, nophoto, sueHunter, taylorThurman } from "../assets/border"
 
 export const categories = [
@@ -121,3 +121,30 @@ export const border = [
   }
 ]
 
+export const programs = [
+  {
+    title: "ENGLISH FOR SPEAKERS OF OTHER LANGUAGES",
+    image: prog01,
+    path: '/programs/esl-program'
+  },
+  {
+    title: "ADULT BASIC EDUCATION & GED/HISET PREP",
+    image: prog02,
+    path: '/programs/adult-education'
+  },
+  {
+    title: "FAMILY LITERACY",
+    image: prog03,
+    path: '/programs/family-literacy'
+  },
+  {
+    title: "DIGITAL LITERACY",
+    image: prog04,
+    path: '/programs/digital-literacy'
+  }
+]
+
+export const announcement = {
+  text: "Enrollment for ESL 2025 courses is now open. Hurry up and apply. Limited number of registrations.",
+  path: '/programs/esl-program'
+}

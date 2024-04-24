@@ -1,6 +1,10 @@
 import AboutLayout from "./AboutLayout";
+import AdultEducation from "./AdultEducation";
 import Board from "./Board";
 import Career from "./Career";
+import DigitalLiteracy from "./DigitalLiteracy";
+import EslProgram from "./EslProgram";
+import FamilyLiteracy from "./FamilyLiteracy";
 import Home from "./Home";
 import MainPage from "./MainPage";
 import Mission from "./Mission";
@@ -28,5 +32,10 @@ export {
   Staff,
   Projects,
   Partners,
-  Record
+  Record,
+
+  EslProgram,
+  AdultEducation,
+  FamilyLiteracy,
+  DigitalLiteracy
 }

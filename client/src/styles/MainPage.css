@@ -110,6 +110,14 @@ section .container {
   transition: all 0.3s ease 0s;
 }
 
+.buttonBox >.prog-button{
+  margin-top: 0px;
+}
+
+.progButtons{
+  margin-top: 40px;
+}
+
 .mainButton:hover{
   background: #DB7F35;
   color:#fff;
