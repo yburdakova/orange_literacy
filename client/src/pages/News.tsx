@@ -45,8 +45,12 @@ const News = () => {
       <section >
         <div className="container">
           <div className='categories'>
-            {
-              cats.map(cat => <div className={`catItem ${active==cat ? "activeCat" : ""}`} onClick={()=>handleClickActiveCat(cat)} key={cat} >{cat}</div>)
+            { cats.map(cat =>
+              <div
+                className={`catItem ${active==cat ? "activeCat" : ""}`} 
+                onClick={()=>handleClickActiveCat(cat)} 
+                key={cat}
+              >{cat}</div>)
             }
           </div>
         </div>
