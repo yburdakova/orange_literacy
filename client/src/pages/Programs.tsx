@@ -2,7 +2,7 @@
 
 const Programs = () => {
   return (
-    <div>Programs</div>
+    <div className='infoBox-main'>Programs</div>
   )
 }
 

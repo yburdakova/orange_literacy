@@ -1,5 +1,6 @@
 import mainLogo from './logo-full-darkorange.svg'
 import heroImage from './cover.png'
+import author from './maria-adams.png'
 
 // news
 import new01 from './news/image01.png'
@@ -11,6 +12,7 @@ import event01 from './news/event001.png'
 import event02 from './news/event002.png'
 import event03 from './news/event003.png'
 
+
 export {
   mainLogo,
   heroImage,
@@ -21,5 +23,7 @@ export {
 
   event01,
   event02,
-  event03
+  event03,
+  
+  author
 }

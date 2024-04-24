@@ -147,7 +147,7 @@ header {
   header{
     height: 110px;
   }
-  .menu{
+  header .menu{
     display: none;
   }
   .burger_container {

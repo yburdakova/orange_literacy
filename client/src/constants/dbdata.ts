@@ -1,4 +1,5 @@
 import { event01, event02, event03, new01, new02, new03 } from "../assets"
+import { auroraBoyer, casonLynley, deanSmith, johnSherer, nophoto, sueHunter, taylorThurman } from "../assets/border"
 
 export const categories = [
   "News",
@@ -71,3 +72,52 @@ export const news = [
     eventDate: "2024-03-10T18:00:16.481+00:00"
   },
 ]
+
+export const border = [
+  {
+    image: taylorThurman,
+    name: "Taylor Thurman",
+    position: "President"
+  },
+  {
+    image: johnSherer,
+    name: "John Sherer",
+    position: "Vice President"
+  },
+  {
+    image: sueHunter,
+    name: "Sue Hunter",
+    position: "Secretary"
+  },
+  {
+    image: casonLynley,
+    name: "Cason Lynley",
+    position: "Treasurer"
+  },
+  {
+    image: auroraBoyer,
+    name: "Aurora Boyer",
+    position: ""
+  },
+  {
+    image: deanSmith,
+    name: "Dean J. Smith",
+    position: ""
+  },
+  {
+    image: nophoto,
+    name: "Susan Brown",
+    position: ""
+  },
+  {
+    image: nophoto,
+    name: "Thomas Grasty",
+    position: ""
+  },
+  {
+    image: nophoto,
+    name: "Mandy Brannon",
+    position: ""
+  }
+]
+

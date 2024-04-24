@@ -36,7 +36,9 @@ const MainPage = () => {
         <div className="textBox">
           <h1>Welcome to Orange Literacy</h1>
           <p className="subtitle">Orange Literacy is an independent, community-based, volunteer-driven organization dedicated to making literacy available to all. We provide free, individualized literacy instruction to adults who would like to improve their reading, writing, basic math or English language skills.</p>
-          <button>LEARN MORE <span className='arrow-icon'><MdDoubleArrow size={18}/></span></button>
+          <Link to={`/about`} >
+            <button>LEARN MORE <span className='arrow-icon'><MdDoubleArrow size={18}/></span></button>
+          </Link>
         </div>
         <div className="container">
           <div className="buttonBox" >

@@ -17,7 +17,6 @@ body, html {
 body{
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  
   margin: 0;
 }
 
@@ -46,8 +45,8 @@ h1 {
   transition: width 0.3s ease;
 }
 
-.menu a:hover::after,
-.menu a.active::after { 
+header .menu a:hover::after,
+header .menu a.active::after { 
   width: 100%;
 }
 

@@ -24,3 +24,30 @@ export const menuLinks = [
     path: "/career"
   }
 ]
+
+export const asideMenuAboutLinks = [
+  {
+    title: "Our Mission",
+    path: "/about/mission",
+  },
+  {
+    title: "Board Of Directors",
+    path: "/about/board"
+  },
+  {
+    title: "Staff",
+    path: "/about/staff"
+  },
+  {
+    title: "Projects",
+    path: "/about/projects"
+  },
+  {
+    title: "Partners",
+    path: "/about/partners"
+  },
+  {
+    title: "Impact Record",
+    path: "/about/record"
+  }
+]
