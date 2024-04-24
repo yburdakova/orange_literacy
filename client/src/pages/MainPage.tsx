@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { news } from '../constants/dbdata'
 import { NewsProps } from '../constants/types'
 import { EventItem, NewsItem } from '../components'
+import { Link } from 'react-router-dom'
 
 const MainPage = () => {
   const [hotNews, setHotNews] = useState<NewsProps[]>([])
@@ -56,16 +57,16 @@ const MainPage = () => {
           <div className='hotNews'>
             <div className="hotNews-top">
               <h2 className="section-title">Recent News</h2>
-              <div className="more-link">more news <span className='arrow-icon'><MdDoubleArrow size={16}/></span></div>
+              <Link to={`/news?filterCase=News`} >
+                <div className="more-link">more news <span className='arrow-icon'><MdDoubleArrow size={16}/></span></div>
+              </Link>
             </div>
-          
           <div className="hotNewsBox">
             {
               hotNews.map((news: NewsProps) => <NewsItem key={news.title} news={news}/>)
             }
           </div>
           </div>
-          
         </div>
       </section>
       <section className="video">
@@ -90,18 +91,15 @@ const MainPage = () => {
           <div className='hotNews'>
             <div className="hotNews-top">
               <h2 className="section-title">Upcoming Events</h2>
+              <Link to={`/news?filterCase=Events`} >
               <div className="more-link">more events <span className='arrow-icon'><MdDoubleArrow size={16}/></span></div>
+              </Link>
             </div>
-          
           <div className="eventsBox">
-            {
-              events.map((news: NewsProps) => <EventItem key={news.title} news={news}/>)
-            }
+            {  events.map((news: NewsProps) => <EventItem key={news.title} news={news}/>)  }
           </div>
           </div>
-          
         </div>
-        
       </section>
     </div>
   )

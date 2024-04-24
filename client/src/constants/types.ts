@@ -11,6 +11,10 @@ export interface SocialIconProps{
 
 }
 
+export interface NewsListProps {
+  filterCase: string;
+}
+
 export interface NewsProps {
   image: string;
   title: string;
@@ -20,6 +24,7 @@ export interface NewsProps {
   createdAt: string;
   eventDate?: string;
 }
+
 export interface NewsItemProps {
   news: NewsProps;
 }

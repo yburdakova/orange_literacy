@@ -20,7 +20,7 @@ const Header = () => {
               <TranslateModule />
               <nav className='menu'>
                 <ul className='menuBox'>
-                  {menuLinks.map((link) => 
+                  {menuLinks.map((link) =>
                     <MenuLink title={link.title} key={link.title} path={link.path}/>
                   )}
                 </ul>
@@ -28,7 +28,6 @@ const Header = () => {
               <Burger/>
             </div>
           </div>
-          
         </div>
       </header>
   )

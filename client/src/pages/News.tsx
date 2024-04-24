@@ -4,13 +4,18 @@ import { news } from '../constants/dbdata'
 import { NewsProps } from '../constants/types'
 import '../styles/NewsPage.css'
 import '../styles/App.css'
+import { useLocation } from 'react-router-dom';
 
 const cats = [
   "All", "News", "Articles", "Events", "Press Realeses", "Student Spotlights", "Volunteer Spotlights", "Partner Spotlights"
 ]
 
 const News = () => {
-  const [active, setActive] = useState('All');
+
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const filterCase = params.get('filterCase');
+  const [active, setActive] = useState(filterCase);
   const [shownNews, setShownNews] = useState(news)
   const [empty, setEmpty] = useState(false)
 
