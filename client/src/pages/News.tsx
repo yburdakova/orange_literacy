@@ -15,7 +15,12 @@ const News = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const filterCase = params.get('filterCase');
-  const [active, setActive] = useState(filterCase);
+
+  const initialActive = filterCase || "All";
+  console.log(initialActive)
+
+
+  const [active, setActive] = useState(initialActive);
   const [shownNews, setShownNews] = useState(news)
   const [empty, setEmpty] = useState(false)
 

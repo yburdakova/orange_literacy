@@ -8,11 +8,6 @@ export interface SocialIconProps{
   title: string;
   icon: React.ReactNode;
   url: string;
-
-}
-
-export interface NewsListProps {
-  filterCase: string;
 }
 
 export interface NewsProps {
