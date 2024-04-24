@@ -1,5 +1,5 @@
 .programs-info{
-  margin-top: 20px;
+  margin: 20px 20px 0 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 60px;
-  margin: 60px 0;
+  margin: 60px 20px 0 20px;
 }
 
 .program-card{
@@ -58,3 +58,15 @@
   transform: scale(1.1);
   filter: brightness(0.7) sepia(1) hue-rotate(340deg);
 }
+
+@media screen and (max-width: 768px) {
+  .program-card .title{
+    font-size: 18px;
+  }
+  .cardsBox{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
