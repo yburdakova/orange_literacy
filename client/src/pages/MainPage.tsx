@@ -4,7 +4,7 @@ import { heroImage } from '../assets'
 import { useEffect, useState } from 'react'
 import { news } from '../constants/dbdata'
 import { NewsProps } from '../constants/types'
-import { Attention, EventItem, NewsItem } from '../components'
+import { Attention, ButtonSet, EventItem, NewsItem } from '../components'
 import { Link } from 'react-router-dom'
 
 const MainPage = () => {
@@ -32,18 +32,8 @@ const MainPage = () => {
             <button>LEARN MORE <span className='arrow-icon'><MdDoubleArrow size={18}/></span></button>
           </Link>
         </div>
-        <div className="container">
-          <div className="buttonBox" >
-            <a className="mainButton" href='https://orangeliteracy.my.site.com/studentapp/s/' target='_blank'>
-              BECOME A STUDENT
-            </a>
-            <a className="mainButton" href='https://docs.google.com/forms/d/e/1FAIpQLSceS9Z14h-RD2E9SY06mcrevCjmYZgEWRkxgEzICsNHkF_HdA/viewform' target='_blank'>
-              VOLUNTEER WITH US
-            </a>
-            <a className="mainButton" href='https://secure.givelively.org/donate/orange-county-literacy-council-inc' target='_blank'>
-              MAKE A DONATION
-            </a>
-          </div>
+        <div id="moveTop" className="container">
+          <ButtonSet/>
         </div>
       </section>
       <section >

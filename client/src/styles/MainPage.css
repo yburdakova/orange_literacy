@@ -47,6 +47,7 @@ section.cover{
 section.cover .imgBox{
   display: flex;
   height: 700px;
+  overflow: hidden;
 }
 
 section.cover .imgBox img {
@@ -72,6 +73,7 @@ section.cover .imgBox img {
 .textBox button {
   width:fit-content;
   padding: 10px 20px;
+  height: 100%;
   
 }
 
@@ -96,30 +98,26 @@ section .container {
   margin-bottom: 40px;
 }
 
-.mainButton{
-  text-decoration: none;
+a.mainButton{
   color: #4D4C72;
 }
+
 .buttonBox > .mainButton{
   background: #fff;
-  margin-top: -20px;
   padding: 10px 30px;
   border: 2px solid #E07D45;
   border-radius: 10px;
   text-align: center;
   transition: all 0.3s ease 0s;
+
 }
 
 .buttonBox >.prog-button{
   margin-top: 0px;
 }
 
-.progButtons{
-  margin-top: 40px;
-}
-
 .mainButton:hover{
-  background: #DB7F35;
+
   color:#fff;
   cursor:pointer;
 }
@@ -187,6 +185,9 @@ iframe.videoItem{
   display: flex;
   gap: 20px;
   flex-direction: column;
+}
+#moveTop{
+  margin-top: -20px;
 }
 @media screen and (max-width: 1023px){
   .textBox{

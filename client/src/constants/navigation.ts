@@ -1,3 +1,5 @@
+import { prog01, prog02, prog03, prog04 } from "../assets"
+
 export const menuLinks = [
   {
     title: "Home",
@@ -13,7 +15,7 @@ export const menuLinks = [
   },
   {
     title: "Programs",
-    path: "/programs"
+    path: "/programs-list"
   },
   {
     title: "Volunteer",
@@ -49,5 +51,28 @@ export const asideMenuAboutLinks = [
   {
     title: "Impact Record",
     path: "/about/record"
+  }
+]
+
+export const asideMenuProgramsLinks = [
+  {
+    title: "ENGLISH FOR SPEAKERS  OF OTHER LANGUAGES",
+    path: "/programs/esl-program",
+    image: prog01
+  },
+  {
+    title: "ADULT BASIC EDUCATION & GED/HISET PREP",
+    path: "/programs/adult-education",
+    image: prog02
+  },
+  {
+    title: "FAMILY LITERACY",
+    path: "/programs/family-literacy",
+    image: prog03
+  },
+  {
+    title: "DIGITAL LITERACY",
+    path: "/programs/digital-literacy",
+    image: prog04
   }
 ]

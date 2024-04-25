@@ -26,9 +26,9 @@ html {
 body {
     line-height: 1;
 }
-ol, ul {
+/* ol, ul {
     list-style: none;
-}
+} */
 blockquote, q {
     quotes: none;
 }
@@ -44,4 +44,5 @@ table {
 
 a {
     text-decoration: none;
+    width: fit-content;
 }

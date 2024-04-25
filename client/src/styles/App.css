@@ -33,11 +33,11 @@ button {
   text-transform: uppercase;
   color: #737473;
   font-weight: 800;
-  width: 50%;
-  margin-top: 10px;
+  width: fit-content;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   border: none;
+
 }
 button:hover{
   color:#CF8146

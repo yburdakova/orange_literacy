@@ -17,6 +17,7 @@
   font-size: 22px;
   line-height: 27px;
   color: #4B4A4A;
+  margin-bottom: 40px;
 }
 
 .cardsBox{
@@ -57,6 +58,25 @@
 .program-card:hover img{
   transform: scale(1.1);
   filter: brightness(0.7) sepia(1) hue-rotate(340deg);
+}
+
+.program-content h2{
+  color: #4D4C72;
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.program-content .text {
+  margin: 40px 0;
+}
+
+.program-content .text p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4B4A4A;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {

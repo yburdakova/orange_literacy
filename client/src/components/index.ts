@@ -1,5 +1,6 @@
 import Attention from "./Attention";
 import Burger from "./Burger";
+import ButtonSet from "./ButtonSet";
 import EventItem from "./EventItem";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -8,7 +9,6 @@ import NewsItem from "./NewsItem";
 import ProgramCard from "./ProgramCard";
 import SocialIcon from "./SocialIcon";
 import TranslateModule from "./TranslateModule";
-
 
 export {
   TranslateModule,
@@ -20,5 +20,6 @@ export {
   NewsItem,
   EventItem,
   ProgramCard,
-  Attention
+  Attention,
+  ButtonSet
 }

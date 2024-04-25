@@ -45,11 +45,12 @@ h1 {
   transition: width 0.3s ease;
 }
 
-header .menu a:hover::after,
-header .menu a.active::after { 
+.menu a:hover::after,
+.menu a.active::after { 
   width: 100%;
 }
 
 .menu a.active {
   color: #CF8146;
 }
+

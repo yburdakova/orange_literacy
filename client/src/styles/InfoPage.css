@@ -48,7 +48,9 @@
   display: flex;
   gap: 4px;
 }
-
+.aside-ButtonBox{
+margin: 20px 0;
+}
 .right-menu{
   background-color: #F5F5F5;
   padding: 25px;
@@ -74,6 +76,10 @@
 }
 .author-position{
   font-weight: 400;
+}
+
+.aside-menu{
+width: fit-content;
 }
 
 .author-img{

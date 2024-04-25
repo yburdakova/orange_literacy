@@ -11,6 +11,7 @@ import Mission from "./Mission";
 import News from "./News";
 import Partners from "./Partners";
 import Programs from "./Programs";
+import ProgramsLayout from "./ProgramsLayout";
 import Projects from "./Projects";
 import Record from "./Record";
 import Staff from "./Staff";
@@ -21,6 +22,7 @@ import Volunteer from "./Volunteer";
 export {
   Home,
   AboutLayout,
+  ProgramsLayout,
   Programs,
   News,
   Volunteer,
