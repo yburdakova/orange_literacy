@@ -14,8 +14,10 @@ const Programs = () => {
             <h2 className="title-programs">Free classes and tutoring for adults and families </h2>
             <p className="text-programs">Orange Literacy offers free, personalized learning. Our literacy programs focus on College and Career Readiness, English Language Learning, Children and Families, and Building Community Capacity. Explore our educational programs and sign up for a class, become a volunteer, or make a donation. Thank you for creating better lives through learning.</p>
           </div>
-          </div>
+        </div>
+        <div id="moveTop" className="container">
           <ButtonSet/>
+        </div>
       </section>
       <section>
         <div className="container">

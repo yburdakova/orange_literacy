@@ -43,10 +43,12 @@
   border-radius: 10px;
   padding: 10px;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 27px;
   color: #FFFFFF;
   max-width: 60%;
+  transition: all 0.3s ease 0s;
+  border: 2px solid #E07D45;
 }
 
 .program-card .imgBox{
@@ -59,7 +61,11 @@
   transform: scale(1.1);
   filter: brightness(0.7) sepia(1) hue-rotate(340deg);
 }
-
+.program-card:hover .title {
+  background: #fff;
+  color: #4D4C72;
+  border: 2px solid #E07D45;
+}
 .program-content h2{
   color: #4D4C72;
   font-size: 24px;
