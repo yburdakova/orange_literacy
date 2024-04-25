@@ -48,6 +48,9 @@ header {
   justify-content: center;
   align-items: center;
 }
+.burger_container ol, ul {
+  list-style: none;
+}
 
 .burger {
   cursor: pointer;

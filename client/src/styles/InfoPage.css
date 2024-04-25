@@ -138,6 +138,7 @@ width: fit-content;
     flex-direction: column;
   }
   .right-block{
-    margin-left: 40px;
+    justify-content: center;
+    align-self: center;
   }
 }

@@ -100,6 +100,7 @@ section .container {
 
 a.mainButton{
   color: #4D4C72;
+  width: 80%;
 }
 
 .buttonBox > .mainButton{
@@ -117,7 +118,7 @@ a.mainButton{
 }
 
 .mainButton:hover{
-
+  background: #E07D45;
   color:#fff;
   cursor:pointer;
 }
@@ -213,7 +214,7 @@ iframe.videoItem{
   }
   .buttonBox > .mainButton:not(:first-child){
     margin-top: 0px;
-    
+
   }
   .mainButton{
     margin-left: 20px;
